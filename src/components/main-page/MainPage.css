@@ -1,11 +1,10 @@
 .main-page {
-    height: 300vh;
-    background: #E5E5E5;
     position: relative;
 }
 
 .top {
     width: 100%;
+    margin-bottom: 720px;
 }
 
 .nav {
@@ -107,6 +106,8 @@
 
 .miniature-page__body {
     display: flex;
+    border: solid 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .miniature-page__menu {
@@ -281,7 +282,50 @@
     color: #2C5282;
 }
 
-.default{
+.default {
     background: #2A4365;
     color: #F7FAFC;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 6.25rem;
+    width: 100%;
+    background: #2A4365;
+    padding: 0 10.125rem 0 7.625rem;
+    box-sizing: border-box;
+}
+
+.footer__ul {
+    display: inherit;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 4.625rem;
+    list-style-type: none;
+}
+
+.footer__li {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.438rem;
+    color: #FFFCFE;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    gap: .188rem;
+}
+
+.logo__text_left-side{
+    color: #FFF;
+    font-weight: 400;
+}
+
+.logo__text_right-side{
+    color: #63B3ED;
+    font-weight: 500;
 }

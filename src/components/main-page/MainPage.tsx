@@ -1,11 +1,13 @@
 import React from 'react';
 import './MainPage.css';
 import top from '../../assets/backgrounds/top-part-main-page.svg';
+import logo from '../../assets/icons/logo.svg';
 
 const MainPage = () => {
 
+    const footerList = ['Register', 'Terms & conditions', 'Privacy policy', 'Documentation', 'Pricing', 'Our blog']
+
     const onClickHandler = () => {
-        console.log(1111)
     }
 
     return <div className="main-page">
@@ -156,6 +158,18 @@ const MainPage = () => {
                 </div>
             </div>
         </main>
+        <footer className="footer">
+            <ul className="footer__ul">{
+                footerList.map((el, i) => <li className="footer__li" key={i}>{el}</li>)
+            }</ul>
+            <div className="logo">
+                <img src={logo} alt="logo"/>
+                <div className="logo__text">
+                    <span className="logo__text_left-side">Rival</span>
+                    <span className="logo__text_right-side">CMS</span>
+                </div>
+            </div>
+        </footer>
     </div>
 }
 

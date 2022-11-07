@@ -78,9 +78,9 @@ const MainPage = () => {
                     </div>
                     <div className="miniature-page__main">
                         <header className="miniature-page__head">
-                            <div className="rectangle rectangle__first"></div>
-                            <div className="rectangle rectangle__second"></div>
-                            <div className="rectangle rectangle__third"></div>
+                            <div className="rectangle rectangle__modify modify-first"></div>
+                            <div className="rectangle rectangle__modify modify-second"></div>
+                            <div className="rectangle rectangle__modify modify-third"></div>
                             <div className="rectangle rectangle__biggest"></div>
                         </header>
                         <main className="miniature-page__chapters">
